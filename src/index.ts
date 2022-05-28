@@ -10,7 +10,7 @@ el arreglo indica que la butaca está ocupada
 • La presencia de un valor falso (false) en el
 arreglo indica que la butaca está desocupada*/
 
-/*let totalButacas: number = Number(prompt("Ingrese cantidad de butacas"));
+let totalButacas: number = Number(prompt("Ingrese cantidad de butacas"));
 let butacas: boolean[] = new Array(totalButacas);
 let cantButacasDesocupadas: number = 0;
 
@@ -19,31 +19,34 @@ for (let indice: number = 0; indice < totalButacas; indice++) {
     prompt(" Indique si la butaca  esta ocupada: T para si, F para no")
   );
 
-  if (butacas[indice] === false) { 
+  if (butacas[indice] === false) {
     cantButacasDesocupadas++;
   }
-  
 }
-console.log("La cantidad de butacas desocupadas son " +cantButacasDesocupadas);*/
+console.log("La cantidad de butacas desocupadas son " + cantButacasDesocupadas);
+
+/* EJEMPLO DADO POR LA PROFESORA
+
+let cine : boolean[] = [false, false,true,true,false, false, false];
+let vacias : number = 0;
 
 
+let calcularButacasVacias = (arreglo: boolean[]): number => {
 
+let indice:number;
 
-let totalButacas: number = Number(prompt("Ingrese cantidad de butacas"));
-let butacas: boolean[] = new Array(totalButacas);
-let cantButacasDesocupadas: number = 0;
+       for (indice = 0; indice < 7; indice++) {
 
-for (let indice: number = 0; indice < totalButacas; indice++) {
-  butacas[indice] = Boolean(
-    prompt(" Indique si la butaca  esta ocupada T para si, F para no")
-  );
+  if (arreglo[indice] === false) { 
+     vacias++;
 
-  if (butacas[indice] === false) { 
-      butacas[indice] = true;
-
-  } else if (butacas[indice]= F){
-    butacas = false;
-  }
   
+                     }
+  
+                    }    
+
+return vacias;
 }
-console.log("La cantidad de butacas desocupadas son " +cantButacasDesocupadas);
+
+console.log (cine)
+console.log("La cantidad de butacas vacias es " + calcularButacasVacias(cine)) */
